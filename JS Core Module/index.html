@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./case-logo.png" type="image/gif" sizes="350x350">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>JS Path in SoftUni</title>
+</head>
+<body>
+    <div class="container mt-3">
+        <h1>JS Core Module</h1>
+        <h2 class="mt-4">JS Essentials</h2>
+        <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#js-essentilas-info">Details</button>
+            <div class="collapse mt-3" id="js-essentilas-info">
+                <div class="card card-body">
+                    <p>В курса "<strong>JS Essentials</strong>" ще разгледате <strong>основния синтаксис на езика JavaScript</strong>. Изучават се<strong> типовете данни</strong>, <strong>оператори</strong>, <strong>изрази</strong>, <strong>условни конструкции</strong>, <strong>цикли</strong> и <strong>работа с функции</strong>. Ще се запознаете с<strong> DOM дървото</strong> и ще започнете да работите с <strong>JavaScript в браузъра</strong>. Курсът е силно насочен към <strong>практиката</strong>, с огромен брой упражнения в клас и практически изпит. Всички задачи от упражненията и изпитите се оценяват автоматизирано с онлайн Judge система. Оценяването в курса е на базата на предадени домашни и практически изпит.</p>
+                 </div>
+                 <button type="button" class="btn btn-info mt-3"
+                        data-toggle="modal"  
+                        data-target="#courseConfirmation"
+                        data-course-info="JS Essentials">Apply</button>
+            </div>
+        <h2>JS Advanced</h2>
+        <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#js-advanced-info">Details</button>
+            <div class="collapse mt-3" id="js-advanced-info">
+                <div class="card card-body">
+                    <p>В курса "<strong>JS Advanced</strong>" ще <strong>надградите </strong>знанията си по<strong> JavaScript</strong>, като изучите <strong>по-сложните концепции</strong>&nbsp;като <strong>IFFE</strong>, <strong>clousure</strong>, <strong>objects </strong>и <strong>classes</strong>. Този курс ще развие <strong>алгоритмичното ви мислене</strong> и ще надгради знанията ви за <strong>DOM дървото</strong>. Ще се научите да <strong>манипулирате DOM дървото</strong>, да <strong>добавяте </strong>и <strong>триете </strong><strong>елементи </strong>от него. Освен това, ще се научите как да <strong>тествате кода си</strong> използвайки библиотеки за <strong>Unit тестване</strong>. Ще разгледате <strong>OOP</strong> частта на JavaScript (inheritance, prototypes and prototypes chains).&nbsp;Оценяването в курса е на базата на предадени домашни и практически изпит.</p>
+                </div>
+                <button type="button" class="btn btn-info mt-3"
+                        data-toggle="modal"  
+                        data-target="#courseConfirmation"
+                        data-course-info="JS Advanced">Apply</button>
+            </div>
+        <h2>JS Applications</h2>
+        <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#js-applications-info">Details</button>
+            <div class="collapse mt-3" id="js-applications-info">
+                <div class="card card-body">
+                    <p>В курса "<strong>JS Apps</strong>" ще научите какво сa <strong>HTTP заявки</strong> и как да ги използвате. Ще се запознаете с <strong>REST Services</strong>, какво са <strong>базите данни</strong> и <strong>как да работите с тях</strong>, какво означава <strong>асинхронен код</strong>, какво представляват <strong>Templating</strong> и <strong>Routing</strong>. Ще разберете каква е <strong>архитектурата на едно приложение</strong> и как да <strong>структурирате правилно апликациите си</strong>. На края на курса ще създадете собствен <strong>Single Page Application</strong>.&nbsp;Оценяването в курса е на базата на предадени домашни и практически изпит.</p>
+                </div>
+                <button type="button" class="btn btn-info mt-3"
+                        data-toggle="modal"  
+                        data-target="#courseConfirmation"
+                        data-course-info="JS Applications">Apply</button>
+            </div>
+    </div>
+
+  
+  <!-- Modal reused for the 3 courses -->
+  <div class="modal fade" id="courseConfirmation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <input type="text" class="form-control"></input>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Yes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+        $('#courseConfirmation').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget) // Button that triggered the modal
+        var course = button.data('course-info') // Extract info from data-* attributes
+        // e.g -data-course-info="JS Applications"-
+        // Updates the modal's content depending on the course type.
+        var modal = $(this)
+        modal.find('.modal-title').text(`Apply for the ${course} course!`)
+        modal.find('.modal-body input').val(`Are you sure you want to apply for the ${course} course?`)
+})
+  </script>
+</body>
+</html>
